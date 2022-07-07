@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./search.css";
 import axios from "axios";
+import Results from "./Results";
 
 export default function Search() {
   let [keyword, setKeyword] = useState("");
+  let [results, getResults] = useState(null);
 
   function handleSearch(event) {
     event.preventDefault();
@@ -13,7 +15,7 @@ export default function Search() {
   }
 
   function handleResponse(response) {
-    console.log(response.data);
+    getResults(response.data[0]);
   }
 
   function handleKeywordChange(event) {
@@ -28,6 +30,7 @@ export default function Search() {
         <input type="serach" onChange={handleKeywordChange} />
         <input type="submit" value="Search" className="btn btn-primary" />
       </form>
+      <Results results={results} />
     </div>
   );
 }
