@@ -1,0 +1,21 @@
+.definitions {
+  font-size: 17px;
+}
+
+.example {
+  font-size: 13px;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.synonyms {
+  margin: 20px 0;
+  padding: 0px;
+}
+
+.synonyms li {
+  display: inline-block;
+  padding-right: 23px;
+  text-transform: capitalize;
+  font-size: 14px;
+}

@@ -10,6 +10,7 @@ export default function App() {
         <header className="App-header">
           <img src={logo} className="App-logo img-fluid" alt="logo" />
           <main>
+            <h1> Look up a word!</h1>
             <Search />
           </main>
         </header>

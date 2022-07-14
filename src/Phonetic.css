@@ -1,0 +1,27 @@
+.phonetics {
+  height: 40px;
+  margin-top: 20px;
+}
+
+.phonetics a {
+  border: 1px solid var(--tertiary-color);
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: var(--tertiary-color);
+  background: var(--primary-color);
+  border-radius: 25px;
+  margin-right: 13px;
+  transition: 150ms;
+  font-size: 16px;
+}
+
+.phonetics a:hover {
+  color: var(--primary-color);
+  background: var(--tertiary-color);
+}
+
+.phonetics-text {
+  color: gray;
+  font-size: 16px;
+}

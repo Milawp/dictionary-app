@@ -27,9 +27,15 @@ export default function Search() {
   return (
     <div className="search">
       <form onSubmit={handleSearch}>
-        <input type="serach" onChange={handleKeywordChange} />
-        <input type="submit" value="Search" className="btn btn-primary" />
+        <input
+          type="serach"
+          autoFocus="on"
+          className="search-bar"
+          placeholder="Enter a word..."
+          onChange={handleKeywordChange}
+        />
       </form>
+      <p>Suggested words: Mountain, Isthmus, Lake, Avalanche...</p>
       <Results results={results} />
     </div>
   );
