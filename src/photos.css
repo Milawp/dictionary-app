@@ -1,0 +1,5 @@
+.photos img {
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
